@@ -33,7 +33,7 @@ public class UserController {
 
         log.debug("Received user limit of: " + limit);
 
-        if(limit != null || limit == 0) {
+        if(limit == null || limit == 0) {
             log.debug("Setting limit to default value of 10");
             limit = 10;
         }
